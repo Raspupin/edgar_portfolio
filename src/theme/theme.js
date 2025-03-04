@@ -1,6 +1,9 @@
 import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
+  typography: {
+    fontFamily: "Inter, Arial, sans-serif",
+  },
   palette: {
     primary: {
       main: "#31363F", // Lighter Dark Grey
