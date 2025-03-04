@@ -3,18 +3,18 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#37474F", // Blue Gray
+      main: "#31363F", // Lighter Dark Grey
     },
     secondary: {
-      main: "#00BCD4", // Cyan
+      main: "#76ABAE", // Dark Grey
     },
     background: {
-      default: "#263238", // Dark Gray
+      default: "#EEEEEE", // White Cream
       paper: "#37474F", // Slightly lighter background for cards
     },
     text: {
-      primary: "#FFFFFF", // White
-      secondary: "#B0BEC5", // Light Gray for subtitles
+      primary: "#222831", // Dark Grey
+      secondary: "#31363F", // Lighter Dark Grey
     },
   },
 });
