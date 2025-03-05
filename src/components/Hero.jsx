@@ -16,7 +16,7 @@ function Hero() {
       }}
     >
       <Container>
-        <Typography variant="h2" sx={{ fontWeight: "bold", mb: 1 }}>
+        <Typography variant="h3" sx={{ fontWeight: "bold", mb: 1 }}>
           Edgar Temkin
         </Typography>
         <Typography

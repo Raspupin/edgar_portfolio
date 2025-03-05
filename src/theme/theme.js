@@ -13,7 +13,7 @@ const theme = createTheme({
     },
     background: {
       default: "#EEEEEE", // White Cream
-      paper: "#37474F", // Slightly lighter background for cards
+      paper: "#EEEEEE", // Slightly lighter background for cards
     },
     text: {
       primary: "#222831", // Dark Grey
