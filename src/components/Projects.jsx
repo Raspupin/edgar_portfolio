@@ -1,11 +1,16 @@
-import { Typography } from "@mui/material";
+import { Typography, Container } from "@mui/material";
 import React from "react";
 
 function Projects() {
   return (
-    <div>
-      <Typography>THIS IS PROJECTS</Typography>
-    </div>
+    <Container>
+      <Typography variant="h4" sx={{ mt: 4 }}>
+        Projects Page
+      </Typography>
+      <Typography variant="body1">
+        This is where projects will be displayed.
+      </Typography>
+    </Container>
   );
 }
 

@@ -1,11 +1,14 @@
 import React from "react";
-import { Typography } from "@mui/material";
+import { Typography, Container } from "@mui/material";
 
 function About() {
   return (
-    <div>
-      <Typography>THIS IS ABOUT</Typography>
-    </div>
+    <Container>
+      <Typography variant="h4" sx={{ mt: 4 }}>
+        About Me
+      </Typography>
+      <Typography variant="body1">This is the About page.</Typography>
+    </Container>
   );
 }
 
