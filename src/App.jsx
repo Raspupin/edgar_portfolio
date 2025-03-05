@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import About from "./components/About";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
@@ -11,6 +12,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <Hero />
       <Routes>
         <Route path="/" element={<Projects />} />
         <Route path="/about" element={<About />} />
