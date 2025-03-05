@@ -6,14 +6,12 @@ function ProjectItem({ image, name }) {
     <Card
       sx={{
         maxWidth: 345,
-        bgcolor: "background.paper",
-        boxShadow: 5,
-        borderRadius: 1,
-        borderBottomRightRadius: 40,
-        borderBottomLeftRadius: 40,
+        bgcolor: "primary.main",
+        boxShadow: 6, // Stronger shadow for depth
+        borderRadius: 3, // Softer rounded corners
         p: 2,
-        borderColor: "primary.main",
-        borderTop: 30,
+        border: "5px solid", // Full border around the card
+        borderColor: "background.paper", // Uses primary color for the border
       }}
     >
       <CardMedia
@@ -24,14 +22,14 @@ function ProjectItem({ image, name }) {
           height: 200,
           objectFit: "cover",
           borderRadius: 2,
-          borderBottom: 8,
-          borderBottomColor: "primary.main",
+          border: "2px solid", // Full border around the card
+          borderColor: "background.paper", // Uses primary color for the border
         }}
       />
       <Box sx={{ textAlign: "center", mt: 2 }}>
         <Typography
           variant="h6"
-          sx={{ fontWeight: "bold", color: "text.primary" }}
+          sx={{ fontWeight: "bold", color: "background.paper" }}
         >
           {name}
         </Typography>
