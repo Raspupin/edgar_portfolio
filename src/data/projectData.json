@@ -2,12 +2,12 @@
   {
     "id": 1,
     "name": "Merge Rumble",
-    "image": "../../public/ProjectPhotos/mergeRumble.jpg"
+    "image": "/ProjectPhotos/mergeRumble.jpg"
   },
   {
     "id": 2,
     "name": "Bag Legends",
-    "image": "../../public/ProjectPhotos/BagLegends.png"
+    "image": "../../ProjectPhotos/BagLegends.png"
   },
   {
     "id": 3,
