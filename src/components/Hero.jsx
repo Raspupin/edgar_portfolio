@@ -23,8 +23,7 @@ function Hero() {
           variant="h5"
           sx={{ opacity: 0.8, maxWidth: "600px", mx: "auto" }}
         >
-          Junior Game Dev Project Lead | Passionate about Game Development &
-          Tech
+          Game Designer | Product Manager
         </Typography>
       </Container>
     </Box>
