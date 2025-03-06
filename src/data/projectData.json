@@ -7,21 +7,21 @@
   {
     "id": 2,
     "name": "Bag Legends",
-    "image": "../../ProjectPhotos/BagLegends.png"
+    "image": "/ProjectPhotos/BagLegends.png"
   },
   {
     "id": 3,
     "name": "Mergemancer",
-    "image": "../../public/ProjectPhotos/Mergemancer.png"
+    "image": "/public/ProjectPhotos/Mergemancer.png"
   },
   {
     "id": 4,
     "name": "Fire Blob",
-    "image": "../../public/ProjectPhotos/FireBlob.jpg"
+    "image": "/public/ProjectPhotos/FireBlob.jpg"
   },
   {
     "id": 5,
     "name": "Color Defender",
-    "image": "../../public/ProjectPhotos/ColorDefender.png"
+    "image": "/public/ProjectPhotos/ColorDefender.png"
   }
 ]
