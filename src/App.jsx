@@ -12,7 +12,7 @@ import Box from "@mui/material/Box";
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar data={aboutData} />
       <Hero />
       <Routes>
         <Route path="/" element={<Projects />} />

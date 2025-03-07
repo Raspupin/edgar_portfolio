@@ -26,10 +26,10 @@ function Projects() {
           zIndex: -1,
         },
         "&::before": {
-          left: 25,
+          left: 10,
         },
         "&::after": {
-          right: 25,
+          right: 10,
           background:
             "linear-gradient(to left, rgba(129, 129, 129, 0.1), transparent)",
         },
