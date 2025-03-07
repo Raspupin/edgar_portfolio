@@ -14,7 +14,7 @@ function Projects() {
     <Box
       sx={{
         position: "relative",
-        py: 2,
+        py: 0,
         "&::before, &::after": {
           content: '""',
           position: "absolute",
@@ -40,9 +40,22 @@ function Projects() {
           variant="h4"
           sx={{
             textAlign: "center",
-            mb: 4,
+            mb: 6,
             fontWeight: "bold",
             color: "text.primary",
+            position: "relative", // Required for absolute underline
+            pb: 3, // Padding to make space for the underline
+            "&::after": {
+              content: '""',
+              position: "absolute",
+              left: "50%",
+              bottom: 0,
+              width: "60%", // Adjust width of underline
+              height: "3px", // Thickness of underline
+              backgroundColor: "text.primary",
+              opacity: 0.3, // Sets underline opacity
+              transform: "translateX(-50%)", // Centers the underline
+            },
           }}
         >
           Projects

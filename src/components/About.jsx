@@ -21,7 +21,7 @@ function About({ data }) {
             gap: 3,
             maxWidth: "100%",
             p: 3,
-            bgcolor: "text.primary", // Uses theme background
+            bgcolor: "primary.main", // Uses theme background
             borderRadius: 3,
             boxShadow: 8, // Consistent shadow style
             border: "5px solid",
@@ -66,7 +66,6 @@ function About({ data }) {
             sx={{
               color: "background.paper", // Theme text color
               textAlign: "justify",
-              fontFamily: "Inter, sans-serif", // Uses your chosen font
               lineHeight: 1.6, // Improves readability
             }}
           >
