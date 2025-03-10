@@ -61,6 +61,19 @@ function ProjectItemDetails() {
           </Typography>
           <Typography variant="body1" sx={{ color: "background.paper", mt: 2 }}>
             {project.description}
+            {project.video && (
+              <Box sx={{ mt: 3, width: "100%", textAlign: "center" }}>
+                <iframe
+                  width="560"
+                  height="315"
+                  src={project.video}
+                  title="Project Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </Box>
+            )}
           </Typography>
 
           {/* Back Button */}
