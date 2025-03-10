@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Box, Container, Typography } from "@mui/material";
 import ProjectItem from "./ProjectItem";
 import projectsData from "../data/projectData.json";
+import { Link } from "react-router-dom";
 
 // Example projects (you can add more later)
 function Projects() {
@@ -75,7 +76,10 @@ function Projects() {
               key={project.id}
               sx={{ width: { xs: "100%", sm: "48%", md: "30%" } }}
             >
-              <ProjectItem image={project.image} name={project.name} />
+              {/* Wrap ProjectItem inside a Link */}
+              <Link to={`/${project.name}/`} style={{ textDecoration: "none" }}>
+                <ProjectItem image={project.image} name={project.name} />
+              </Link>
             </Box>
           ))}
         </Box>

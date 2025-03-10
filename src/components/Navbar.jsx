@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 function Navbar({ data }) {
   return (
-    <AppBar position="static" sx={{ bgcolor: "primary.main" }}>
+    <AppBar position="fixed" sx={{ bgcolor: "primary.main", zIndex: 1100 }}>
       <Toolbar>
         <IconButton
           component={LinkMUI}

@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import ProjectItemDetails from "./components/ProjectItemDetails";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         flexDirection: "column",
         minHeight: "100vh", // Ensures the full page height
         flex: 1,
+        pt: "64px",
       }}
     >
       <Router>
@@ -27,6 +29,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Projects />} />
             <Route path="/about" element={<About data={aboutData} />} />
+            <Route path="/:name" element={<ProjectItemDetails />} />
           </Routes>
         </Box>
         <Footer data={aboutData} />

@@ -2,26 +2,31 @@
   {
     "id": 1,
     "name": "Merge Rumble",
-    "image": "/ProjectPhotos/mergeRumble.jpg"
+    "image": "/ProjectPhotos/mergeRumble.jpg",
+    "description": "Merge Rumble – Merge units, strategize, and survive endless waves of intense battles! Upgrade your forces, outsmart enemies, and dominate the battlefield in this dynamic merge game."
   },
   {
     "id": 2,
     "name": "Bag Legends",
-    "image": "/ProjectPhotos/BagLegends.png"
+    "image": "/ProjectPhotos/BagLegends.png",
+    "description": "Bag Legends: Hero RPG – Merge heroes, strategize your lineup, and conquer wave-based battles! Upgrade your squad, position units wisely, and unlock powerful rewards in this dynamic auto-battler."
   },
   {
     "id": 3,
     "name": "Mergemancer",
-    "image": "/ProjectPhotos/Mergemancer.png"
+    "image": "/ProjectPhotos/Mergemancer.png",
+    "description": "Mergemancer Adventure – Merge, upgrade, and defend in this strategic tower defense game! Combine powerful units, place towers wisely, and survive relentless enemy waves."
   },
   {
     "id": 4,
     "name": "Fire Blob",
-    "image": "/ProjectPhotos/FireBlob.jpg"
+    "image": "/ProjectPhotos/FireBlob.jpg",
+    "description": "In FireBlob, you control a growing fire creature, burning objects to reach 100% size before time runs out. Create flame loops for explosions, adding a strategic twist to the action."
   },
   {
     "id": 5,
     "name": "Color Defender",
-    "image": "/ProjectPhotos/ColorDefender.png"
+    "image": "/ProjectPhotos/ColorDefender.png",
+    "description": "Color Defender: TD RPG – A strategic blend of tower defense and RPG! Switch colors for unique abilities, merge upgrades, and unleash powerful combos to defend against endless waves of enemies."
   }
 ]
