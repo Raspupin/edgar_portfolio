@@ -5,20 +5,33 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import aboutData from "./data/aboutMeInfo.json";
+import Footer from "./components/Footer";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
 function App() {
   return (
-    <Router>
-      <Navbar data={aboutData} />
-      <Hero />
-      <Routes>
-        <Route path="/" element={<Projects />} />
-        <Route path="/about" element={<About data={aboutData} />} />
-      </Routes>
-    </Router>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh", // Ensures the full page height
+        flex: 1,
+      }}
+    >
+      <Router>
+        <Navbar data={aboutData} />
+        <Box sx={{ flex: 1 }}>
+          <Hero />
+          <Routes>
+            <Route path="/" element={<Projects />} />
+            <Route path="/about" element={<About data={aboutData} />} />
+          </Routes>
+        </Box>
+        <Footer data={aboutData} />
+      </Router>
+    </Box>
   );
 }
 
