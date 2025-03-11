@@ -93,6 +93,7 @@ function About({ data }) {
               display: "flex",
               justifyContent: "center",
               mt: 2,
+              mb: 3,
             }}
           >
             <ContactMe data={data} />

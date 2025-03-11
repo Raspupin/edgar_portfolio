@@ -4,34 +4,54 @@
     "name": "Merge Rumble",
     "image": "/ProjectPhotos/mergeRumble.jpg",
     "description": "Merge Rumble – Merge units, strategize, and survive endless waves of intense battles! Upgrade your forces, outsmart enemies, and dominate the battlefield in this dynamic merge game.",
-    "video": "https://youtube.com/embed/tvSWa-bn-As?si=a3vIFi-nUP-aAm4Y"
+    "video": "https://youtube.com/embed/tvSWa-bn-As?si=a3vIFi-nUP-aAm4Y",
+    "androidStoreLink": "",
+    "publisher": "",
+    "genre": "",
+    "releaseDate": ""
   },
   {
     "id": 2,
     "name": "Bag Legends",
     "image": "/ProjectPhotos/BagLegends.png",
     "description": "Bag Legends: Hero RPG – Merge heroes, strategize your lineup, and conquer wave-based battles! Upgrade your squad, position units wisely, and unlock powerful rewards in this dynamic auto-battler.",
-    "video": "https://youtube.com/embed/56pIf9Ebt7A?si=W8lD0CxFDhUp-I3Y"
+    "video": "https://youtube.com/embed/56pIf9Ebt7A?si=W8lD0CxFDhUp-I3Y",
+    "androidStoreLink": "",
+    "publisher": "",
+    "genre": "",
+    "releaseDate": ""
   },
   {
     "id": 3,
     "name": "Mergemancer",
     "image": "/ProjectPhotos/Mergemancer.png",
     "description": "Mergemancer Adventure – Merge, upgrade, and defend in this strategic tower defense game! Combine powerful units, place towers wisely, and survive relentless enemy waves.",
-    "video": "https://youtube.com/embed/a5Klec8x56Y?si=Lh85NTni9kkSJfqX"
+    "video": "https://youtube.com/embed/a5Klec8x56Y?si=Lh85NTni9kkSJfqX",
+    "androidStoreLink": "",
+    "publisher": "",
+    "genre": "",
+    "releaseDate": ""
   },
   {
     "id": 4,
     "name": "Fire Blob",
     "image": "/ProjectPhotos/FireBlob.jpg",
     "description": "In FireBlob, you control a growing fire creature, burning objects to reach 100% size before time runs out. Create flame loops for explosions, adding a strategic twist to the action.",
-    "video": "https://youtube.com/embed/LgBZpYAEUcs?si=P8k8SBDG0qFbkNxX"
+    "video": "https://youtube.com/embed/LgBZpYAEUcs?si=P8k8SBDG0qFbkNxX",
+    "androidStoreLink": "",
+    "publisher": "",
+    "genre": "",
+    "releaseDate": ""
   },
   {
     "id": 5,
     "name": "Color Defender",
     "image": "/ProjectPhotos/ColorDefender.png",
     "description": "Color Defender: TD RPG – A strategic blend of tower defense and RPG! Switch colors for unique abilities, merge upgrades, and unleash powerful combos to defend against endless waves of enemies.",
-    "video": "https://youtube.com/embed/hCPLYzg5a5c?si=jk56ZV91unOl_CdU"
+    "video": "https://youtube.com/embed/hCPLYzg5a5c?si=jk56ZV91unOl_CdU",
+    "androidStoreLink": "",
+    "publisher": "",
+    "genre": "",
+    "releaseDate": ""
   }
 ]

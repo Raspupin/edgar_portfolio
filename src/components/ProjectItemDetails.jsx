@@ -70,6 +70,33 @@ function ProjectItemDetails() {
           <Typography variant="body1" sx={{ color: "background.paper", mt: 2 }}>
             {project.description}
           </Typography>
+          {/* Container for Project specs */}
+          <Container sx={{ flex: 1, textAlign: "left", mt: 5, mb: 1 }}>
+            <Typography
+              variant="body1"
+              sx={{ color: "background.paper", mt: 2 }}
+            >
+              Genre:
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{ color: "background.paper", mt: 2 }}
+            >
+              Publisher:
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{ color: "background.paper", mt: 2 }}
+            >
+              Release Date:
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{ color: "background.paper", mt: 2 }}
+            >
+              Available on Android:
+            </Typography>
+          </Container>
 
           {/* Back Button */}
           <Button
@@ -95,7 +122,6 @@ function ProjectItemDetails() {
               height="560"
               src={project.video}
               title="Project Video"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
