@@ -74,10 +74,18 @@ function Projects() {
           {projects.map((project) => (
             <Box
               key={project.id}
-              sx={{ width: { xs: "100%", sm: "48%", md: "30%" } }}
+              sx={{
+                width: { xs: "80%", sm: "48%", md: "30%" }, // Prevent shrinking
+                maxWidth: 400, // Ensures cards don't become too small
+                display: "flex", // Needed to center items properly
+                justifyContent: "center",
+              }}
             >
               {/* Wrap ProjectItem inside a Link */}
-              <Link to={`/${project.name}/`} style={{ textDecoration: "none" }}>
+              <Link
+                to={`/${project.name}/`}
+                style={{ textDecoration: "none", width: "100%" }}
+              >
                 <ProjectItem image={project.image} name={project.name} />
               </Link>
             </Box>
