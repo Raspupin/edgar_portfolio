@@ -47,26 +47,24 @@ function ProjectItemDetails() {
         }}
       >
         {/* Left Side: Image */}
-        <Box
-          sx={{
-            flex: 1, // Image takes equal space
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <CardMedia
-            component="img"
-            image={project.image}
-            alt={project.name}
+        {project.video && (
+          <Box
             sx={{
-              width: { xs: "100%", md: 350 },
-              height: "auto",
-              objectFit: "cover",
-              borderRadius: 2,
-              boxShadow: 2,
+              flex: 1, // Video takes equal space
+              display: "flex",
+              justifyContent: "center",
             }}
-          />
-        </Box>
+          >
+            <iframe
+              width="315" // Adjusted for Shorts format
+              height="560"
+              src={project.video}
+              title="Project Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </Box>
+        )}
 
         {/* Middle: Project Details */}
         <Box sx={{ flex: 1, textAlign: "center" }}>
@@ -123,9 +121,15 @@ function ProjectItemDetails() {
           </Container>
 
           {/* Back Button */}
+
           <Button
             variant="contained"
-            sx={{ mt: 3 }}
+            sx={{
+              mt: 3,
+              border: "1px solid",
+              textTransform: "none",
+              fontSize: "1.005rem",
+            }}
             onClick={() => navigate("/")}
           >
             Back to Projects
@@ -133,24 +137,26 @@ function ProjectItemDetails() {
         </Box>
 
         {/* Right Side: Embedded YouTube Short */}
-        {project.video && (
-          <Box
+        <Box
+          sx={{
+            flex: 1, // Image takes equal space
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <CardMedia
+            component="img"
+            image={project.image}
+            alt={project.name}
             sx={{
-              flex: 1, // Video takes equal space
-              display: "flex",
-              justifyContent: "center",
+              width: { xs: "100%", md: 350 },
+              height: "auto",
+              objectFit: "cover",
+              borderRadius: 2,
+              boxShadow: 2,
             }}
-          >
-            <iframe
-              width="315" // Adjusted for Shorts format
-              height="560"
-              src={project.video}
-              title="Project Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </Box>
-        )}
+          />
+        </Box>
       </Box>
     </Container>
   );

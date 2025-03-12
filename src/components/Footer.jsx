@@ -46,7 +46,10 @@ function Footer({ data = {} }) {
         <IconButton
           component="a"
           href={data.email || "https://www.google.com"}
-          sx={{ color: "background.paper" }}
+          sx={{
+            color: "background.paper",
+            "&:hover": { transform: "scale(1.2)" },
+          }}
         >
           <EmailIcon />
         </IconButton>
@@ -54,7 +57,10 @@ function Footer({ data = {} }) {
           component="a"
           href={data.linkedinURL || "https://www.linkedin.com/"}
           target="_blank"
-          sx={{ color: "background.paper" }}
+          sx={{
+            color: "background.paper",
+            "&:hover": { transform: "scale(1.2)" },
+          }}
         >
           <LinkedInIcon />
         </IconButton>
@@ -62,7 +68,10 @@ function Footer({ data = {} }) {
           component="a"
           href={data.githubURL || "https://github.com/"}
           target="_blank"
-          sx={{ color: "background.paper" }}
+          sx={{
+            color: "background.paper",
+            "&:hover": { transform: "scale(1.2)" },
+          }}
         >
           <GitHubIcon />
         </IconButton>
