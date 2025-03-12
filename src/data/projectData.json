@@ -9,7 +9,7 @@
     "publisher": "Hoppa-Play",
     "genre": "Hybrid Casual ",
     "releaseDate": "25/12/2024",
-    "platform": "Android"
+    "platform": "Android/IOS"
   },
   {
     "id": 2,
@@ -57,6 +57,6 @@
     "publisher": "Hoppa-Play",
     "genre": "Hybrid Casual ",
     "releaseDate": "17/02/2025",
-    "platform20": "Android"
+    "platform": "Android"
   }
 ]

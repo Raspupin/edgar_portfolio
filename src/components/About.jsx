@@ -76,6 +76,7 @@ function About({ data }) {
             />
 
             {/* Right Side: Description */}
+
             <Typography
               variant="body1"
               sx={{
@@ -84,6 +85,16 @@ function About({ data }) {
                 lineHeight: 1.6, // Improves readability
               }}
             >
+              <Typography
+                variant="h4"
+                sx={{
+                  color: "background.paper",
+                  fontWeight: "bold",
+                  mb: 2,
+                }}
+              >
+                About Me
+              </Typography>
               {data.description}
             </Typography>
           </Box>
