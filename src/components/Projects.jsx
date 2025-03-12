@@ -79,6 +79,10 @@ function Projects() {
                 maxWidth: 400, // Ensures cards don't become too small
                 display: "flex", // Needed to center items properly
                 justifyContent: "center",
+                "&:hover": {
+                  transform: "scale(1.07)",
+                  boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.4)", // Soft shadow on hover
+                },
               }}
             >
               {/* Wrap ProjectItem inside a Link */}
