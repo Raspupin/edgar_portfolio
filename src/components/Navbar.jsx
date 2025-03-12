@@ -57,7 +57,7 @@ function Navbar({ data }) {
 
         {/* Desktop View: Show Buttons */}
         {!isMobile && (
-          <Box sx={{ gap: 3, display: "flex" }}>
+          <Box sx={{ gap: 1, display: "flex" }}>
             <Button
               component={Link}
               to="/projects"
@@ -74,7 +74,7 @@ function Navbar({ data }) {
                   transform: "scale(1.1)",
                 },
                 border: "1px solid",
-                mr: 2,
+                mr: 1,
                 textTransform: "none",
                 fontSize: "1.005rem",
               }}
