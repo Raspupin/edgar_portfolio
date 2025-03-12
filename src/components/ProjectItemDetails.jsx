@@ -1,6 +1,15 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { Box, Typography, Container, CardMedia, Button } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Container,
+  CardMedia,
+  Button,
+  Link,
+  IconButton,
+} from "@mui/material";
+import GetAppIcon from "@mui/icons-material/GetApp";
 import projectsData from "../data/projectData.json";
 
 function ProjectItemDetails() {
@@ -70,32 +79,47 @@ function ProjectItemDetails() {
           <Typography variant="body1" sx={{ color: "background.paper", mt: 2 }}>
             {project.description}
           </Typography>
+
           {/* Container for Project specs */}
           <Container sx={{ flex: 1, textAlign: "left", mt: 5, mb: 1 }}>
             <Typography
               variant="body1"
               sx={{ color: "background.paper", mt: 2 }}
             >
-              Genre:
+              Genre: {project.genre}
             </Typography>
             <Typography
               variant="body1"
               sx={{ color: "background.paper", mt: 2 }}
             >
-              Publisher:
+              Publisher: {project.publisher}
             </Typography>
             <Typography
               variant="body1"
               sx={{ color: "background.paper", mt: 2 }}
             >
-              Release Date:
+              Release Date: {project.releaseDate}
             </Typography>
             <Typography
               variant="body1"
               sx={{ color: "background.paper", mt: 2 }}
             >
-              Available on Android:
+              Platform: {project.platform}
             </Typography>
+            {/* LinkedIn Icon */}
+            <IconButton
+              component={Link}
+              href={project.storeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit my Android Store page"
+              sx={{ mt: { xs: 1, md: 0 } }} // Adds space below LinkedIn icon on small screens
+            >
+              <GetAppIcon sx={{ color: "background.paper", fontSize: 32 }} />
+              <Typography variant="body1" sx={{ color: "background.paper" }}>
+                App Store Page
+              </Typography>
+            </IconButton>
           </Container>
 
           {/* Back Button */}
