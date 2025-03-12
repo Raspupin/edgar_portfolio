@@ -13,6 +13,8 @@ import { Link, useLocation } from "react-router-dom";
 
 function Navbar({ data }) {
   const location = useLocation();
+  const isProjectsActive = location.pathname.startsWith("/projects");
+  const isAboutActive = location.pathname === "/about";
   return (
     <AppBar position="fixed" sx={{ bgcolor: "primary.main", zIndex: 1100 }}>
       <Toolbar>
@@ -38,19 +40,15 @@ function Navbar({ data }) {
         <Box sx={{ gap: 3 }}>
           <Button
             component={Link}
-            to="/"
+            to="/projects"
             color="inherit"
             sx={{
-              fontWeight: location.pathname !== "/about" ? "bold" : "normal",
-              borderBottom: location.pathname === "/" ? "2px solid" : "none",
-              backgroundColor:
-                location.pathname !== "/about"
-                  ? "background.paper"
-                  : "primary.main",
-              color:
-                location.pathname !== "/about"
-                  ? "primary.main"
-                  : "background.paper",
+              fontWeight: isProjectsActive ? "bold" : "normal",
+              borderBottom: isProjectsActive ? "2px solid" : "none",
+              backgroundColor: isProjectsActive
+                ? "background.paper"
+                : "primary.main",
+              color: isProjectsActive ? "primary.main" : "background.paper",
               transition: "transform 0.2s ease, background-color 0.3s ease",
               "&:hover": {
                 transform: "scale(1.1)",
@@ -68,17 +66,12 @@ function Navbar({ data }) {
             to="/about"
             color="inherit"
             sx={{
-              fontWeight: location.pathname === "/about" ? "bold" : "normal",
-              borderBottom:
-                location.pathname === "/about" ? "2px solid" : "none",
-              backgroundColor:
-                location.pathname === "/about"
-                  ? "background.paper"
-                  : "primary.main",
-              color:
-                location.pathname === "/about"
-                  ? "primary.main"
-                  : "background.paper",
+              fontWeight: isAboutActive ? "bold" : "normal",
+              borderBottom: isAboutActive ? "2px solid" : "none",
+              backgroundColor: isAboutActive
+                ? "background.paper"
+                : "primary.main",
+              color: isAboutActive ? "primary.main" : "background.paper",
               transition: "transform 0.2s ease, background-color 0.3s ease",
               "&:hover": {
                 transform: "scale(1.1)",

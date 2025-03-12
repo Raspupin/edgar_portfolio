@@ -87,7 +87,7 @@ function Projects() {
             >
               {/* Wrap ProjectItem inside a Link */}
               <Link
-                to={`/${project.name}/`}
+                to={`/projects/${project.name}`}
                 style={{ textDecoration: "none", width: "100%" }}
               >
                 <ProjectItem image={project.image} name={project.name} />

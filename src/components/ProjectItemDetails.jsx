@@ -13,7 +13,7 @@ import GetAppIcon from "@mui/icons-material/GetApp";
 import projectsData from "../data/projectData.json";
 
 function ProjectItemDetails() {
-  const { name } = useParams(); // Get project ID from URL
+  const { name } = useParams(); // Get project Name from URL
   const navigate = useNavigate();
   const project = projectsData.find((p) => p.name === name); // Find project by Name
 

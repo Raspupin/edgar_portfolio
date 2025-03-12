@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -27,9 +32,10 @@ function App() {
         <Box sx={{ flex: 1 }}>
           <Hero />
           <Routes>
-            <Route path="/" element={<Projects />} />
+            <Route path="/" element={<Navigate to="/projects" />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:name" element={<ProjectItemDetails />} />
             <Route path="/about" element={<About data={aboutData} />} />
-            <Route path="/:name" element={<ProjectItemDetails />} />
           </Routes>
         </Box>
         <Footer data={aboutData} />
