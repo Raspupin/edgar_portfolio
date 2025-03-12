@@ -31,7 +31,7 @@ function ProjectItemDetails() {
   }
 
   return (
-    <Container sx={{ mt: 4 }}>
+    <Container sx={{ mt: 4, mb: 2 }}>
       <Box
         sx={{
           display: "flex",
@@ -112,7 +112,7 @@ function ProjectItemDetails() {
               href={project.storeLink}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Visit my Android Store page"
+              aria-label="Visit my App Store page"
               sx={{ mt: { xs: 1, md: 0 } }} // Adds space below LinkedIn icon on small screens
             >
               <GetAppIcon sx={{ color: "background.paper", fontSize: 32 }} />
