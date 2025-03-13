@@ -5,7 +5,7 @@
     "image": "/ProjectPhotos/mergeRumble.jpg",
     "description": "Merge Rumble – Merge units, strategize, and survive endless waves of intense battles! Upgrade your forces, outsmart enemies, and dominate the battlefield in this dynamic merge game.",
     "video": "https://youtube.com/embed/tvSWa-bn-As?si=a3vIFi-nUP-aAm4Y",
-    "storeLink": "https://play.google.com/store/apps/details?id=com.ek.hoppa.csmm",
+    "storeLink": "https://apps.apple.com/cn/app/merge-rumble-idle-td/id6739533934",
     "publisher": "Hoppa-Play",
     "genre": "Hybrid Casual ",
     "releaseDate": "25/12/2024",
@@ -21,7 +21,7 @@
     "publisher": "Hoppa-Play",
     "genre": "Hybrid Casual ",
     "releaseDate": "18/02/2025",
-    "platform": "IOS"
+    "platform": "Android/IOS"
   },
   {
     "id": 3,
@@ -53,10 +53,10 @@
     "image": "/ProjectPhotos/ColorDefender.png",
     "description": "Color Defender: TD RPG – A strategic blend of tower defense and RPG! Switch colors for unique abilities, merge upgrades, and unleash powerful combos to defend against endless waves of enemies.",
     "video": "https://youtube.com/embed/hCPLYzg5a5c?si=jk56ZV91unOl_CdU",
-    "storeLink": "https://play.google.com/store/apps/details?id=com.ek.hoppa.cdtd",
+    "storeLink": "https://apps.apple.com/cn/app/color-defender-td-rpg/id6740234620",
     "publisher": "Hoppa-Play",
     "genre": "Hybrid Casual ",
     "releaseDate": "17/02/2025",
-    "platform": "Android"
+    "platform": "Android/IOS"
   }
 ]
