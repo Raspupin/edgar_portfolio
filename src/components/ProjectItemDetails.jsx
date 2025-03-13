@@ -46,20 +46,25 @@ function ProjectItemDetails() {
           borderColor: "background.paper",
         }}
       >
-        {/* Left Side: Image */}
+        {/* Left Side: Video */}
         {project.video && (
           <Box
             sx={{
-              flex: 1, // Video takes equal space
+              flex: 1,
               display: "flex",
               justifyContent: "center",
             }}
           >
             <iframe
-              width="315" // Adjusted for Shorts format
-              height="560"
+              width="100%" // Ensures responsiveness
+              height="auto"
+              style={{
+                aspectRatio: "9 / 16", // Maintains Shorts aspect ratio
+                maxWidth: "280px", // Limits max width on mobile
+                borderRadius: "8px", // Adds subtle rounded corners
+              }}
               src={project.video}
-              title="Project Video"
+              title={project.name}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
@@ -136,7 +141,7 @@ function ProjectItemDetails() {
           </Button>
         </Box>
 
-        {/* Right Side: Embedded YouTube Short */}
+        {/* Right Side: Image */}
         <Box
           sx={{
             flex: 1, // Image takes equal space
