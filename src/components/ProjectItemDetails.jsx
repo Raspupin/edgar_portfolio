@@ -75,16 +75,24 @@ function ProjectItemDetails() {
         <Box sx={{ flex: 1, textAlign: "center" }}>
           <Typography
             variant="h4"
-            sx={{ color: "background.paper", fontWeight: "bold", mb: 2 }}
+            sx={{
+              color: "background.paper",
+              fontWeight: "bold",
+              mb: 2,
+              textAlign: "center",
+            }}
           >
             {project.name}
           </Typography>
-          <Typography variant="body1" sx={{ color: "background.paper", mt: 2 }}>
+          <Typography
+            variant="body1"
+            sx={{ color: "background.paper", mt: 2, textAlign: "center" }}
+          >
             {project.description}
           </Typography>
 
           {/* Container for Project specs */}
-          <Container sx={{ flex: 1, textAlign: "left", mt: 5, mb: 1 }}>
+          <Box sx={{ flex: 1, textAlign: "center", mt: 5, mb: 1 }}>
             <Typography
               variant="body1"
               sx={{ color: "background.paper", mt: 2 }}
@@ -109,21 +117,38 @@ function ProjectItemDetails() {
             >
               Platform: {project.platform}
             </Typography>
-            {/* LinkedIn Icon */}
-            <IconButton
-              component={Link}
-              href={project.storeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit my App Store page"
-              sx={{ mt: { xs: 1, md: 0 } }} // Adds space below LinkedIn icon on small screens
+            {/* Appstore Icon */}
+            <Box
+              sx={{
+                textAlign: "center",
+                justifyContent: "center",
+                mt: 2,
+              }}
             >
-              <GetAppIcon sx={{ color: "background.paper", fontSize: 32 }} />
-              <Typography variant="body1" sx={{ color: "background.paper" }}>
-                App Store Page
-              </Typography>
-            </IconButton>
-          </Container>
+              <IconButton
+                component={Link}
+                href={project.storeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit my App Store page"
+                sx={{
+                  mt: { xs: 1, md: 0 },
+                  color: "primary.main",
+                  backgroundColor: "background.paper",
+                  borderRadius: "3px",
+                  "&:hover": {
+                    transform: "scale(1.01)",
+                    backgroundColor: "background.paper",
+                  },
+                }} // Adds space below LinkedIn icon on small screens
+              >
+                <GetAppIcon sx={{ color: "primary.main", fontSize: "20px" }} />
+                <Typography variant="body1" sx={{ color: "primary.main" }}>
+                  App Store Page
+                </Typography>
+              </IconButton>
+            </Box>
+          </Box>
 
           {/* Back Button */}
 
@@ -134,6 +159,10 @@ function ProjectItemDetails() {
               border: "1px solid",
               textTransform: "none",
               fontSize: "1.005rem",
+              width: "80%",
+              "&:hover": {
+                transform: "scale(1.01)",
+              },
             }}
             onClick={() => navigate("/")}
           >
